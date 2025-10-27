@@ -4,6 +4,8 @@
     <ProjectGuid>{76E69FCE-0F38-4701-A4E3-14D247C15FDB}</ProjectGuid>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <RootNamespace>Macad.Test.UI</RootNamespace>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
   <PropertyGroup>

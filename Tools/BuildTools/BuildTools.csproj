@@ -3,10 +3,14 @@
     <ProjectGuid>{ddd402b9-0ab9-4245-b08b-ce8a92e61dbb}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTargets>AnyCPU</PlatformTargets>
     <UseWPF>true</UseWPF>
     <RootNamespace>Macad.Build</RootNamespace>
     <DisableWinExeOutputInference>true</DisableWinExeOutputInference>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <RuntimeIdentifier Condition=" '$(Platform)' == 'x64'">win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier Condition=" '$(Platform)' == 'x86'">win-x86</RuntimeIdentifier>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SharpVectors.Wpf" />

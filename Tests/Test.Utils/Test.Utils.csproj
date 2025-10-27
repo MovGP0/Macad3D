@@ -4,7 +4,8 @@
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <RootNamespace>Macad.Test.Utils</RootNamespace>
-    <Platforms>x64</Platforms>
+    <Platforms>x64;x86</Platforms>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

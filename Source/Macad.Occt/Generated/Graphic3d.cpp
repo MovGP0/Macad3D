@@ -12796,8 +12796,9 @@ void Macad::Occt::Graphic3d_GraphicDriver::SetVerticalSync(bool theToEnable)
 
 bool Macad::Occt::Graphic3d_GraphicDriver::MemoryInfo(long long unsigned int% theFreeBytes, Macad::Occt::TCollection_AsciiString^ theInfo)
 {
-    pin_ptr<long long unsigned int> pp_theFreeBytes = &theFreeBytes;
-    bool _result = ((::Graphic3d_GraphicDriver*)_NativeInstance)->MemoryInfo(*(long long unsigned int*)pp_theFreeBytes, *(::TCollection_AsciiString*)theInfo->NativeInstance);
+    ::Standard_Size theFreeBytesNative = static_cast<::Standard_Size>(theFreeBytes);
+    bool _result = ((::Graphic3d_GraphicDriver*)_NativeInstance)->MemoryInfo(theFreeBytesNative, *(::TCollection_AsciiString*)theInfo->NativeInstance);
+    theFreeBytes = static_cast<long long unsigned int>(theFreeBytesNative);
     return _result;
 }
 

@@ -3,7 +3,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <ProjectGuid>{42AFF16F-57DD-45BE-A9CC-C6342E3EA23D}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Platforms>x64</Platforms>
+      <Configurations>Debug;Release</Configurations>
+      <Platforms>AnyCPU;x86;x64</Platforms>
+      <RuntimeIdentifier Condition=" '$(Platform)' == 'x64'">win-x64</RuntimeIdentifier>
+      <RuntimeIdentifier Condition=" '$(Platform)' == 'x86'">win-x86</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
